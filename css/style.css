@@ -1,0 +1,31 @@
+* {
+    
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#grid_wrapper_hem {
+    display: grid;
+    grid-template-areas: 
+    "oo oo"
+    "ha oo"
+    "oo oo";
+    /* ska se till att texten och "boka besök" knappen finns i "ha" */
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color:darkcyan;
+}
