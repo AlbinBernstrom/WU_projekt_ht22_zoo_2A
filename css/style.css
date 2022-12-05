@@ -1,5 +1,9 @@
 * {
-    
+
+}
+
+body {
+
 }
 
 #icon {
@@ -11,6 +15,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: darkorchid;
 }
 
 #grid_wrapper_hem {
@@ -20,6 +25,23 @@ header {
     "ha oo"
     "oo oo";
     /* ska se till att texten och "boka besök" knappen finns i "ha" */
+}
+
+#text_hem {
+    grid-area: ha;
+    background: url("../img/placeholder/1Der5Dkw60.jpg");
+    
+}
+
+#bakgrund_hem {
+    grid-area: oo;
+    background-image: url("../img/placeholder/b5eAGLVpPl.jpg");
+    
+}
+
+
+h1 {
+    margin: 10px;
 }
 
 
