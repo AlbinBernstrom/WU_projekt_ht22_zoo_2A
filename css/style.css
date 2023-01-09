@@ -33,25 +33,40 @@ header {
     display: grid;
     grid-template-areas: 
     "he he"
-    "oo oo"
-    "ha oo"
+    "ha ha"
+    "tv bb"
     "oo oo"
     "fo fo";
     /* ska se till att texten och "boka besök" knappen finns i "ha"  */
 }
 
-#text_hem {
+
+
+#text_vanster {
+    grid-area: tv;
+    width: 500px;
     margin-left: 15%;
     margin-top: 20%;
-    margin-right: 55%;
     color:rgb(209, 51, 51);
-    
 }
 
-#bakgrund_hem {
-    grid-area: oo;
-    background-image: url("../img/placeholder/b5eAGLVpPl.jpg");
-    
+#boka_biljett {
+    grid-area: bb;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    margin-top: 20%;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#biljett_text {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color:lawngreen;
 }
 
 #title_home{
@@ -71,52 +86,51 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     background-color:darkcyan;
-    margin-top: 38%;
+    margin-top: 30%;
 }
 
 
-#section_personal {
+
+#huvud_artikel {
+    grid-area: ha;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
-.article_personal {
-    width: 210px;
-    height: 210px;
-    border: 3px solid darkblue;
-    border-radius: 10px;
-    margin: 10px;
+
+.card_container {
+    grid-area: oo;
+    width: 90%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;   
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-p {
-    background: firebrick;
-    width: 150px;
-    display: flex;
-    justify-content: center;
+.card {
+    box-shadow: 0 4px 8px 0 gray;
+    max-width: 300px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    font-family: arial;
 }
-
-#article_nasir {
-    background: url("../img/1Der51gx60.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+  
+.card_img {
+    width: 100%;
+    height: 200px;
 }
-
-#article_ida {
-    background: url("../img/1DerDXvEP0.jpg");
-    background-size: contain;
+  
+.card_namn {
+    margin: 0;
+    color: #000;
+    font-size: 20px;
 }
-
-#article_omid {
-    background: url("../img/1QJx3lv1ez.jpg");
-    background-size: contain;
+  
+.card_jobb {
+    margin: 5px;
+    font-size: 15px;
+    color: gray;
 }
-
-#article_leo {
-    background: url("../img/1QJxEBXKPz.jpg");
-    background-size: contain;
-}
+  
